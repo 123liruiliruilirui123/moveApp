@@ -1,0 +1,282 @@
+a {
+    text-decoration: none;
+}
+
+@function rem($px) {
+    @return $px / 108px*1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 rem(58px);
+    height: rem(148px);
+    line-height: rem(148px);
+    border-bottom: rem(4px) solid #eee;
+    .header-left {
+        img {
+            vertical-align: middle;
+        }
+        a {
+            color: #333;
+            font-size: rem(40px);
+            margin-left: rem(30px);
+            i {
+                padding-left: rem(5px);
+                font-size: rem(35px);
+                font-weight: 800;
+                color: #999;
+            }
+        }
+    }
+    .header-right {
+        img {
+            vertical-align: middle;
+        }
+    }
+}
+
+.top-bar {
+    position: relative;
+    width: 100%;
+    height: rem(665px);
+    img {
+        width: 100%;
+        height: rem(665px);
+    }
+    .search {
+        position: absolute;
+        bottom: 60px;
+        height: rem(122px);
+        width: 91%;
+        margin: 0 rem(45px);
+        text-align: center;
+        line-height: rem(122px);
+        color: #a9acad;
+        font-size: rem(44px);
+        background: rgba(255, 255, 255, .9);
+        i {
+            font-size: rem(44px);
+        }
+    }
+}
+
+.top-list {
+    display: flex;
+    align-content: center;
+    height: rem(390px);
+    border-bottom: rem(4px) solid #DDD;
+    div {
+        width: (100%/4);
+        text-align: center;
+        margin: rem(75px) 0;
+        p {
+            font-size: rem(44px);
+            color: #394043;
+            margin-top: rem(34px);
+        }
+    }
+}
+
+.jiange {
+    height: rem(36px);
+    border-bottom: rem(4px) solid #DDD;
+    background-color: #f7f7f7;
+}
+
+.title {
+    height: rem(161px);
+    margin-left: rem(60px);
+    border-bottom: 4px solid #ddd;
+    line-height: rem(161px);
+    font-size: rem(48px);
+    font-weight: 800;
+}
+
+.lunbo {
+    overflow: hidden;
+    height: rem(440px);
+    margin: rem(60px) 0 0 rem(60px);
+    .wrap {
+        display: flex;
+        flex-wrap: no-wrap;
+        width: rem(5000px);
+        .item {
+            width: rem(392px);
+            margin-right: rem(36px);
+            .item-top {
+                position: relative;
+                img {
+                    width: 100%;
+                    height: rem(242px);
+                }
+                span {
+                    position: absolute;
+                    bottom: rem(15px);
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+                    color: #FFF;
+                    font-size: rem(36px);
+                }
+            }
+            .item-bottom {
+                font-size: rem(40px);
+                margin-top: rem(34px);
+                height: rem(92px);
+                line-height: rem(46px);
+            }
+        }
+    }
+}
+
+.one {
+    border-top: rem(4px) solid #DDD;
+}
+
+.add {
+    display: flex;
+    justify-content: space-between;
+    div {
+        i {
+            font-size: rem(40px);
+            color: #9c9fa1;
+        }
+    }
+    em {
+        font-size: rem(40px);
+        color: #9c9fa1;
+        i {
+            font-size: rem(40px);
+            color: #9c9fa1;
+        }
+    }
+}
+
+.person {
+    display: flex;
+    height: rem(248px);
+    padding: rem(60px) 0 0 0;
+    margin-left: rem(60px);
+    .toux {
+        margin-right: rem(45px);
+    }
+    .person-info {
+        border-bottom: rem(2px) solid #ddd;
+        h2 {
+            font-size: rem(48px);
+            color: #394043;
+            margin-bottom: rem(30px);
+        }
+        p {
+            font-size: rem(40px);
+            margin-bottom: rem(20px);
+            color: #8b8b8b;
+        }
+    }
+}
+
+.ershou {
+    height: rem(258px);
+    padding: rem(60px) 0;
+    margin-left: rem(60px);
+    border-bottom: rem(2px) solid #DDD;
+    display: flex;
+    .image {
+        height: rem(244px);
+        margin-right: rem(62px);
+        img {
+            height: rem(244px);
+        }
+    }
+    .list-content {
+        p {
+            margin-top: rem(10px);
+            line-height: rem(60px);
+            color: #394043;
+            font-size: rem(48px);
+        }
+        h3 {
+            margin-top: rem(20px);
+            color: #8b8b8b;
+            font-size: rem(38px);
+        }
+        h4 {
+            margin-top: rem(30px);
+            span {
+                color: #9c9fa1;
+                font-size: 36px;
+            }
+            strong {
+                color: #fa5741;
+                font-size: rem(44px);
+                font-weight: 800;
+                margin-right: rem(40px);
+            }
+        }
+        .tag {
+            margin-top: rem(30px);
+            span {
+                margin-right: rem(30px);
+                padding: rem(10px) rem(15px);
+                color: #849aae;
+                background-color: #f4f7f9;
+            }
+        }
+    }
+}
+
+.newhouse {
+    margin: rem(60px) rem(60px);
+    height: rem(572px);
+    background: {
+        image: url(../images/xf1.jpg);
+        size: 100% 100%;
+    }
+    h2 {
+        margin: rem(50px) rem(50px);
+        font-size: rem(56px);
+        color: #FFF;
+        font-weight: 800;
+        padding-top: rem(316px);
+    }
+    p {
+        margin: 0 rem(50px);
+        margin-top: rem(37px);
+        font-size: rem(40px);
+        color: #FFF;
+        opacity: .8;
+        span {
+            float: right;
+            background: rgba(0, 0, 0, .6);
+            color: #ff6700;
+            font-size: rem(40px);
+            border-radius: rem(40px);
+            padding: rem(5px) rem(34px) rem(12px) rem(34px);
+        }
+    }
+}
+
+.first {
+    background: {
+        image: url(../images/xf2.jpg);
+        size: 100% 100%;
+    }
+}
+
+.second {
+    background: {
+        image: url(../images/xf3.jpg);
+        size: 100% 100%;
+    }
+}
+
+.footer {
+    height: rem(98px);
+    line-height: rem(49px);
+    color: silver;
+    font-size: rem(40px);
+    background-color: #F7F7F7;
+    border-top: rem(4px) solid #DDD;
+    padding: rem(54px) rem(60px) rem(60px) rem(60px);
+}
