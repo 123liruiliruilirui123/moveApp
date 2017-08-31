@@ -33,22 +33,17 @@ a {
 }
 
 .top-bar {
-  position: relative;
+  overflow: hidden;
   width: 100%;
   height: 6.15741rem;
-}
-
-.top-bar img {
-  width: 100%;
-  height: 6.15741rem;
+  background-image: url(../images/list.jpg);
+  background-size: 100% 100%;
 }
 
 .top-bar .search {
-  position: absolute;
-  bottom: 60px;
   height: 1.12963rem;
-  width: 91%;
   margin: 0 0.41667rem;
+  margin-top: 4.46296rem;
   text-align: center;
   line-height: 1.12963rem;
   color: #a9acad;
@@ -295,4 +290,126 @@ a {
   background-color: #F7F7F7;
   border-top: 0.03704rem solid #DDD;
   padding: 0.5rem 0.55556rem 0.55556rem 0.55556rem;
+}
+
+.finsh {
+  height: 2.66667rem;
+  background-color: #293031;
+}
+
+.finsh .footer-info {
+  height: 0.87963rem;
+  border-bottom: 0.01852rem solid #3e403f;
+  margin: 0 0.40741rem;
+  line-height: 0.87963rem;
+}
+
+.finsh .footer-info span {
+  color: #939494;
+  font-size: 0.31481rem;
+  margin-right: 0.18519rem;
+}
+
+.finsh .footer-info em {
+  color: #727373;
+  font-size: 0.31481rem;
+}
+
+.finsh .footer-info em i {
+  font-size: 0.31481rem;
+}
+
+.finsh .footer-end {
+  display: flex;
+  justify-content: space-between;
+  height: 1.43519rem;
+  padding-top: 0.37037rem;
+  margin: 0 0.40741rem;
+}
+
+.finsh .footer-end .footer-logo {
+  display: flex;
+}
+
+.finsh .footer-end .footer-logo a:nth-child(1) {
+  display: inline-block;
+  height: 0.66667rem;
+  width: 1.66667rem;
+  margin-top: 0.46296rem;
+  background-image: url(../images/apple.png);
+  background-size: 1.66667rem 1.33333rem;
+  background-opacity: .32;
+}
+
+.finsh .footer-end .footer-logo a:nth-child(2) {
+  display: inline-block;
+  height: 0.66667rem;
+  width: 1.66667rem;
+  margin-top: 0.46296rem;
+  background-image: url(../images/apple.png);
+  background-size: 1.66667rem 1.33333rem;
+  background-position: 0 0.66667rem;
+}
+
+.finsh .footer-end .info p {
+  position: relative;
+  line-height: 0.46296rem;
+  text-align: right;
+  font-size: 0.31481rem;
+  color: #737173;
+}
+
+.finsh .footer-end .info p img {
+  position: absolute;
+  left: 0.37037rem;
+  top: -0.09259rem;
+  width: 0.55556rem;
+  height: 0.61111rem;
+}
+
+.finsh .app {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 1.38889rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.finsh .app .app-left {
+  float: left;
+  display: flex;
+  padding-left: 0.46296rem;
+}
+
+.finsh .app .app-left img {
+  margin: 0.23148rem 0;
+}
+
+.finsh .app .app-left .text {
+  margin: 0.23148rem 0;
+  margin-left: 0.18519rem;
+}
+
+.finsh .app .app-left .text p {
+  font-size: 0.40741rem;
+  color: #FFF;
+}
+
+.finsh .app .app-left .text h3 {
+  line-height: 0.55556rem;
+  font-size: 0.33333rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.finsh .app .app-right {
+  float: right;
+  height: 1.38889rem;
+  width: 3.05556rem;
+  background-color: #00ae63;
+  color: #FFF;
+  font-size: 0.46296rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.38889rem;
 }

@@ -37,19 +37,17 @@ a {
 }
 
 .top-bar {
-    position: relative;
+    overflow: hidden;
     width: 100%;
     height: rem(665px);
-    img {
-        width: 100%;
-        height: rem(665px);
+    background: {
+        image: url(../images/list.jpg);
+        size: 100% 100%;
     }
     .search {
-        position: absolute;
-        bottom: 60px;
         height: rem(122px);
-        width: 91%;
         margin: 0 rem(45px);
+        margin-top: rem(482px);
         text-align: center;
         line-height: rem(122px);
         color: #a9acad;
@@ -279,4 +277,116 @@ a {
     background-color: #F7F7F7;
     border-top: rem(4px) solid #DDD;
     padding: rem(54px) rem(60px) rem(60px) rem(60px);
+}
+
+.finsh {
+    height: rem(288px);
+    background-color: #293031;
+    .footer-info {
+        height: rem(95px);
+        border-bottom: rem(2px) solid #3e403f;
+        ;
+        margin: 0 rem(44px);
+        line-height: rem(95px);
+        span {
+            color: #939494;
+            font-size: rem(34px);
+            margin-right: rem(20px);
+        }
+        em {
+            color: #727373;
+            font-size: rem(34px);
+            i {
+                font-size: rem(34px);
+            }
+        }
+    }
+    .footer-end {
+        display: flex;
+        justify-content: space-between;
+        height: rem(155px);
+        padding-top: rem(40px);
+        margin: 0 rem(44px);
+        .footer-logo {
+            display: flex;
+            a:nth-child(1) {
+                display: inline-block;
+                height: rem(72px);
+                width: rem(180px);
+                margin-top: rem(50px);
+                background: {
+                    image: url(../images/apple.png);
+                    size: rem(180px) rem(144px);
+                    opacity: .32;
+                }
+            }
+            a:nth-child(2) {
+                display: inline-block;
+                height: rem(72px);
+                width: rem(180px);
+                margin-top: rem(50px);
+                background: {
+                    image: url(../images/apple.png);
+                    size: rem(180px) rem(144px);
+                    position: 0 rem(72px);
+                }
+            }
+        }
+        .info {
+            p {
+                position: relative;
+                line-height: rem(50px);
+                text-align: right;
+                font-size: rem(34px);
+                color: #737173;
+                img {
+                    position: absolute;
+                    left: rem(40px);
+                    top: rem(-10px);
+                    width: rem(60px);
+                    height: rem(66px);
+                }
+            }
+        }
+    }
+    .app {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: rem(150px);
+        width: 100%;
+        background-color: rgba(0, 0, 0, .8);
+        .app-left {
+            float: left;
+            display: flex;
+            padding-left: rem(50px);
+            img {
+                margin: rem(25px) 0;
+            }
+            .text {
+                margin: rem(25px) 0;
+                margin-left: rem(20px);
+                p {
+                    font-size: rem(44px);
+                    color: #FFF;
+                }
+                h3 {
+                    line-height: rem(60px);
+                    font-size: rem(36px);
+                    color: rgba(255, 255, 255, .7);
+                }
+            }
+        }
+        .app-right {
+            float: right;
+            height: rem(150px);
+            width: rem(330px);
+            background-color: #00ae63;
+            color: #FFF;
+            font-size: rem(50px);
+            font-weight: 800;
+            text-align: center;
+            line-height: rem(150px);
+        }
+    }
 }
