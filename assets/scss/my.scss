@@ -1,0 +1,144 @@
+a {
+    text-decoration: none;
+}
+
+@function rem($px) {
+    @return $px / 108px*1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 rem(58px);
+    height: rem(148px);
+    line-height: rem(148px);
+    img {
+        vertical-align: middle;
+    }
+    .header-left {
+        flex: 3;
+        a {
+            color: #333;
+            font-size: rem(40px);
+            margin-left: rem(30px);
+            i {
+                padding-left: rem(5px);
+                font-size: rem(35px);
+                font-weight: 800;
+                color: #999;
+            }
+        }
+    }
+    .header-zh {
+        flex: 4;
+        text-align: center;
+    }
+    .header-right {
+        flex: 3;
+        text-align: right;
+    }
+}
+
+.user {
+    height: rem(598px);
+    background: {
+        image: url(../images/my.png);
+        size: 100% 100%;
+    }
+    .image {
+        height: rem(162px);
+        padding-top: rem(120px);
+        text-align: center;
+        img {
+            width: rem(162px);
+            height: rem(162px);
+        }
+    }
+    .menu {
+        height: rem(108px);
+        padding: rem(66px) 0;
+        text-align: center;
+        a {
+            display: inline-block;
+            margin: 0 rem(20px);
+            width: rem(264px);
+            height: rem(102px);
+            border: rem(2px) solid #fff;
+            border-radius: rem(5px);
+            color: #fff;
+            font-size: rem(48px);
+            text-align: center;
+            line-height: rem(100px);
+        }
+    }
+}
+
+.jiange {
+    height: rem(38px);
+    border-bottom: rem(2px) solid #DDD;
+    background-color: #f7f7f7;
+}
+
+.list {
+    margin: 0 0 0 rem(151px);
+    height: rem(153px);
+    border-bottom: rem(2px) solid #ddd;
+    div {
+        position: relative;
+        height: rem(153px);
+        line-height: rem(153px);
+        margin-right: rem(85px);
+        em {
+            float: left;
+            font-size: rem(44px);
+        }
+        span {
+            position: absolute;
+            top: rem(50px);
+            left: rem(-90px);
+            display: inline-block;
+            width: rem(54px);
+            height: rem(54px);
+            background: {
+                image: url(../images/icon.png);
+                size: cover;
+            }
+        }
+        i {
+            float: right;
+            font-size: rem(34px);
+            font-weight: 800;
+            color: #9c9a9c;
+        }
+    }
+}
+
+.one {
+    span {
+        background: {
+            image: url(../images/icon.png);
+            size: cover;
+            position: 0 rem(-55px);
+        }
+    }
+}
+
+.two {
+    span {
+        background: {
+            image: url(../images/icon.png);
+            size: cover;
+            position: 0 rem(-110px);
+        }
+    }
+}
+
+.three {
+    span {
+        background: {
+            image: url(../images/icon.png);
+            size: cover;
+            position: 0 rem(-165px);
+        }
+    }
+}

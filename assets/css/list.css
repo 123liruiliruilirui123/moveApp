@@ -11,8 +11,12 @@ a {
   border-bottom: 0.03704rem solid #eee;
 }
 
-.header .header-left img {
+.header img {
   vertical-align: middle;
+}
+
+.header .header-left {
+  flex: 3;
 }
 
 .header .header-left a {
@@ -28,8 +32,14 @@ a {
   color: #999;
 }
 
-.header .header-right img {
-  vertical-align: middle;
+.header .header-zh {
+  flex: 4;
+  text-align: center;
+}
+
+.header .header-right {
+  flex: 3;
+  text-align: right;
 }
 
 .top-bar {
@@ -383,6 +393,8 @@ a {
 }
 
 .finsh .app .app-left img {
+  width: 0.92593rem;
+  height: 0.92593rem;
   margin: 0.23148rem 0;
 }
 

@@ -13,10 +13,11 @@ a {
     height: rem(148px);
     line-height: rem(148px);
     border-bottom: rem(4px) solid #eee;
+    img {
+        vertical-align: middle;
+    }
     .header-left {
-        img {
-            vertical-align: middle;
-        }
+        flex: 3;
         a {
             color: #333;
             font-size: rem(40px);
@@ -29,10 +30,13 @@ a {
             }
         }
     }
+    .header-zh {
+        flex: 4;
+        text-align: center;
+    }
     .header-right {
-        img {
-            vertical-align: middle;
-        }
+        flex: 3;
+        text-align: right;
     }
 }
 
@@ -361,6 +365,8 @@ a {
             display: flex;
             padding-left: rem(50px);
             img {
+                width: rem(100px);
+                height: rem(100px);
                 margin: rem(25px) 0;
             }
             .text {

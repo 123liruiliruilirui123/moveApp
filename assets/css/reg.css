@@ -1,0 +1,90 @@
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  height: 1.2963rem;
+  margin: 0 0.55556rem;
+  color: #6b7072;
+  font-size: 0.46296rem;
+  line-height: 1.2963rem;
+  margin-bottom: 0.46296rem;
+}
+
+.header i {
+  flex: 4;
+  font-size: 0.72222rem;
+  font-weight: 800;
+  color: #6b7072;
+}
+
+.header span {
+  flex: 6;
+}
+
+.shuru {
+  height: 1.66667rem;
+  margin: 0 0.55556rem;
+  border-bottom: 0.03704rem solid #DDD;
+}
+
+.shuru input {
+  margin-top: 0.46296rem;
+}
+
+.shuru .num {
+  vertical-align: middle;
+  float: left;
+  width: 55%;
+  height: 0.74074rem;
+  font-size: 0.41667rem;
+  border: 0;
+  outline: 0;
+}
+
+.shuru .test {
+  vertical-align: middle;
+  float: right;
+  width: 30%;
+  height: 0.74074rem;
+  color: #9c9ea5;
+  line-height: 0.74074rem;
+  text-align: center;
+  font-size: 0.46296rem;
+  background-color: #fff;
+  border: 0;
+  outline: 0;
+}
+
+.shuru .pass {
+  width: 100%;
+}
+
+.btn {
+  height: 1.66667rem;
+  margin: 0.27778rem 0.55556rem;
+  height: 1.35185rem;
+  line-height: 1.35185rem;
+  text-align: center;
+  color: #FFF;
+  font-size: 0.44444rem;
+  background-color: #63cfa5;
+}
+
+.footer {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  height: 0.92593rem;
+  font-size: 0.44444rem;
+  color: #cdcfd0;
+  text-align: center;
+}
+
+.footer a {
+  color: #cdcfd0;
+  font-size: 0.44444rem;
+  text-decoration: underline;
+}

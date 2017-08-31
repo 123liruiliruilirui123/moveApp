@@ -58,6 +58,57 @@ a {
     }
 }
 
+.dingbu-hide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: rem(148px);
+    background-color: #FFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .3);
+    display: none;
+    .mark {
+        float: left;
+        display: flex;
+        .logo {
+            margin-left: rem(50px);
+            margin-top: rem(25px);
+            width: rem(100px);
+            height: rem(100px);
+            background: {
+                image: url(../images/logo.png);
+                size: 100% 100%;
+            }
+        }
+        .text {
+            margin-left: rem(50px);
+            margin-top: rem(22px);
+            width: rem(438px);
+            h3 {
+                font-size: rem(48px);
+                color: #394043;
+            }
+            p {
+                margin-top: rem(30px);
+                font-size: rem(34px);
+                color: #9c9fa1;
+            }
+        }
+    }
+    .btn {
+        float: right;
+        width: rem(257px);
+        height: rem(98px);
+        margin-top: rem(26px);
+        background-color: #00ae66;
+        font-size: rem(36px);
+        color: #FFF;
+        line-height: rem(98px);
+        text-align: center;
+        border-radius: rem(5px);
+    }
+}
+
 .main {
     height: rem(675px);
     background: {
@@ -141,20 +192,36 @@ a {
     border-bottom: rem(4px) solid #ddd;
     overflow: hidden;
     background-color: #f7f7f7;
-    ul {
-        width: 100%;
+    .lunbo-body {
+        width: 300%;
         position: absolute;
         top: rem(40px);
         left: 0;
-        display: flex;
-        flex-wrap: no-wrap;
-        flex-direction: row;
         li {
-            width: 50%;
+            float: left;
+            width: (100%/3);
             height: rem(302px);
-            img {
-                height: 100%;
-                width: 100%;
+            background: {
+                image: url(../images/lb1.jpg);
+                size: 100% 100%;
+            }
+        }
+        li:nth-child(2) {
+            float: left;
+            width: (100%/3);
+            height: rem(302px);
+            background: {
+                image: url(../images/lb2.png);
+                size: 100% 100%;
+            }
+        }
+        li:nth-child(3) {
+            float: left;
+            width: (100%/3);
+            height: rem(302px);
+            background: {
+                image: url(../images/lb1.jpg);
+                size: 100% 100%;
             }
         }
     }
@@ -355,7 +422,6 @@ a {
                 img {
                     position: absolute;
                     left: rem(40px);
-
                     width: rem(60px);
                     height: rem(66px);
                 }
